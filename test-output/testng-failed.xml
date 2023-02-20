@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="my udemy test chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.myTest.LoginTest">
+        <methods>
+          <include name="dologintest"/>
+          <include name="setupTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.myTest.LoginTest -->
+    </classes>
+  </test> <!-- my udemy test chrome(failed) -->
+  <test thread-count="2" parallel="methods" name="my udemy test firefox(failed)">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="com.myTest.LoginTest">
+        <methods>
+          <include name="dologintest"/>
+          <include name="setupTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.myTest.LoginTest -->
+    </classes>
+  </test> <!-- my udemy test firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
